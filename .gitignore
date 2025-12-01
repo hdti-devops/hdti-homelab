@@ -1,0 +1,44 @@
+# VISUAL STUDIO CODE (VSCODE) EXCLUSIONS
+# Local workspace settings
+.vscode/
+
+# Local history, which is not meant to be shared
+.history/
+
+# The workspace storage directory for extensions
+.vscode-test/
+
+# VS Code built-in TypeScript cache
+.cache/
+
+# User-specific launch configurations (often contain paths specific to your machine)
+.vscode/launch.json
+
+# User-specific tasks configurations
+.vscode/tasks.json
+
+# Recommended: Only include settings.json if you want to share workspace settings
+# If you want to share settings, comment this line out:
+#.vscode/settings.json
+
+# TERRAFORM EXCLUSIONS
+# -------------------------------------
+# The directory Terraform uses to store downloaded providers and modules.
+# It should NEVER be committed.
+.terraform/
+
+# The local state file (stores resource information, secrets, etc.)
+# It should NEVER be committed to a non-remote state repo.
+terraform.tfstate
+terraform.tfstate.backup
+
+# Crash log files from failed plans/applies
+crash.log
+
+# Terraform plan output files
+*.tfplan
+*.tfplan.binary
+
+# Generated SSH key files (avoid committing secrets)
+*.pem
+*.key
